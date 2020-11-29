@@ -1,6 +1,7 @@
 body
     main
         .instrucciones,.templates,.grid
+            margin: 0 auto
             width: 95%
             display: grid
             grid-template: auto/repeat(3,1fr)
@@ -23,3 +24,9 @@ body
                     img
                         border-radius: 15px 15px 0 0
                         width: 100%
+@media screen and ( max-width:1000px  )
+    body
+        main
+            .grid
+                grid-template: auto/1fr
+                width: 80%
