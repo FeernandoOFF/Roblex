@@ -1,0 +1,40 @@
+body main .instrucciones, body main .templates, body main .grid {
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: (1fr)[3];
+      grid-template: auto/repeat(3, 1fr);
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  grid-gap: 1.5rem;
+}
+
+body main .instrucciones .card, body main .templates .card, body main .grid .card {
+  width: 100%;
+  background: #eeeeee;
+  border-radius: 15px;
+}
+
+body main .instrucciones .card h3, body main .templates .card h3, body main .grid .card h3 {
+  font-weight: 600;
+  color: #000000;
+}
+
+body main .instrucciones .card .text-container, body main .templates .card .text-container, body main .grid .card .text-container {
+  padding: .5rem 1.5rem;
+}
+
+body main .instrucciones .card .img-container, body main .templates .card .img-container, body main .grid .card .img-container {
+  border-radius: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body main .instrucciones .card .img-container img, body main .templates .card .img-container img, body main .grid .card .img-container img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
+/*# sourceMappingURL=estilosAppInicio.css.map */
