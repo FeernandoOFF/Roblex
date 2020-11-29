@@ -1,0 +1,32 @@
+body
+    main
+        .instrucciones,.templates,.grid
+            margin: 0 auto
+            width: 95%
+            display: grid
+            grid-template: auto/repeat(3,1fr)
+            justify-items: stretch
+            align-items: stretch
+            grid-gap: 1.5rem
+            .card
+                width: 100%
+                background: #eeeeee
+                border-radius: 15px
+                h3
+                    font-weight: 600
+                    color: #000000
+                .text-container
+                    padding: .5rem 1.5rem
+                .img-container
+                    border-radius: 15px
+                    width: 100%
+                    margin: 0 auto
+                    img
+                        border-radius: 15px 15px 0 0
+                        width: 100%
+@media screen and ( max-width:1000px  )
+    body
+        main
+            .grid
+                grid-template: auto/1fr
+                width: 80%
