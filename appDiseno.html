@@ -12,10 +12,10 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   </head>
 <body>
-    <!-- <header class="w3-container  w3-red w3-xlarge w3-padding">
+    <header class="w3-container  w3-red w3-xlarge w3-padding">
         <a href="app.html" class="w3-padding"><-</a>
         <span>Roblex App</span>
-    </header> -->
+    </header>
 <!-- These toggle the the different parts of the chair that can be edited, note data-option is the key that links to the name of the part in the 3D file -->
 <div class="options">
     <div class="option --is-active" data-option="legs">
@@ -84,7 +84,10 @@
       texture: 'img/texturas/denim.jpg',
       size: [3, 3, 3],
       shininess: 0
-  }
+  },
+  {
+    color: '008200'
+}
   ]
     var theModel;
     const MODEL_PATH =  "modelos/chair.glb";
