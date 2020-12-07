@@ -1,52 +1,44 @@
-body main .instrucciones,
-body main .templates,
-body main .grid {
+body main .instrucciones, body main .templates, body main .grid {
   margin: 0 auto;
   width: 95%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
-  -ms-grid-columns: (1fr) [3];
-  grid-template: auto/repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template: auto/repeat(3, 1fr);
   justify-items: stretch;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   grid-gap: 1.5rem;
 }
 
-body main .instrucciones .card,
-body main .templates .card,
-body main .grid .card {
+body main .instrucciones .template, body main .templates .template, body main .grid .template {
+  cursor: pointer;
+}
+
+body main .instrucciones .card, body main .templates .card, body main .grid .card {
   width: 100%;
   background: #eeeeee;
   border-radius: 15px;
 }
 
-body main .instrucciones .card h3,
-body main .templates .card h3,
-body main .grid .card h3 {
+body main .instrucciones .card h3, body main .templates .card h3, body main .grid .card h3 {
   font-weight: 600;
   color: #000000;
 }
 
-body main .instrucciones .card .text-container,
-body main .templates .card .text-container,
-body main .grid .card .text-container {
-  padding: 0.5rem 1.5rem;
+body main .instrucciones .card .text-container, body main .templates .card .text-container, body main .grid .card .text-container {
+  padding: .5rem 1.5rem;
 }
 
-body main .instrucciones .card .img-container,
-body main .templates .card .img-container,
-body main .grid .card .img-container {
+body main .instrucciones .card .img-container, body main .templates .card .img-container, body main .grid .card .img-container {
   border-radius: 15px;
   width: 100%;
   margin: 0 auto;
 }
 
-body main .instrucciones .card .img-container img,
-body main .templates .card .img-container img,
-body main .grid .card .img-container img {
+body main .instrucciones .card .img-container img, body main .templates .card .img-container img, body main .grid .card .img-container img {
   border-radius: 15px 15px 0 0;
   width: 100%;
 }
@@ -55,65 +47,8 @@ body main .grid .card .img-container img {
   body main .grid {
     -ms-grid-rows: auto;
     -ms-grid-columns: 1fr;
-    grid-template: auto/1fr;
+        grid-template: auto/1fr;
     width: 80%;
   }
-}
-.fa,
-.fas,
-.far,
-.fal,
-.fad,
-.fab {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-.fa-arrow-alt-circle-down:before {
-  content: "\f358";
-}
-
-.fa-arrow-alt-circle-left:before {
-  content: "\f359";
-}
-
-.fa-arrow-alt-circle-right:before {
-  content: "\f35a";
-}
-
-.fa-arrow-alt-circle-up:before {
-  content: "\f35b";
-}
-
-.fa-arrow-circle-down:before {
-  content: "\f0ab";
-}
-
-.fa-arrow-circle-left:before {
-  content: "\f0a8";
-}
-
-.fa-arrow-circle-right:before {
-  content: "\f0a9";
-}
-
-.fa-arrow-circle-up:before {
-  content: "\f0aa";
-}
-
-.fa-arrow-down:before {
-  content: "\f063";
-}
-
-.fa-arrow-left:before {
-  content: "\f060";
-}
-
-.fa-arrow-right:before {
-  content: "\f061";
 }
 /*# sourceMappingURL=estilosAppInicio.css.map */
