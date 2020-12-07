@@ -97,7 +97,7 @@ body {
 }
 .option:hover {
   border-left: 5px solid white;
-  width: 58px;
+  width: 103%;
 }
 .option.--is-active {
   border-right: 3px solid red;
@@ -124,7 +124,7 @@ body {
   width: 100%;
   height: 50px;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 .tray__slide {
   position: absolute;
@@ -164,6 +164,41 @@ body {
 .drag-notice.start {
   animation: popout 0.25s 3s forwards;
 }
+.slider-css {
+  margin: 0 auto;
+  width: 80%; /* Full-width */
+  position: absolute;
+  bottom: 10%;
+}
+.slider-css input {
+  width: 100%;
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  margin: 0 auto;
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+.slider-css:hover {
+  opacity: 1;
+}
+.slider-css input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
+.slider-css input::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
 @keyframes popout {
   to {
     transform: scale(0);
@@ -175,9 +210,6 @@ body {
   }
 }
 @media (max-width: 960px) {
-  .options {
-    top: 0;
-  }
   .info {
     padding: 0 1em 1em 0;
   }
@@ -188,6 +220,13 @@ body {
   .info__message p {
     margin: 0;
     font-size: 0.7em;
+  }
+  .slider-css {
+    width: 95%;
+    height: 30px;
+  }
+  .slider-css input {
+    height: 30px;
   }
 }
 @media (max-width: 720px) {
@@ -207,9 +246,6 @@ body {
   }
   .info__message {
     display: none;
-  }
-  .options {
-    bottom: 50px;
   }
   .option {
     margin-bottom: 1px;
