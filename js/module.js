@@ -1,17 +1,7 @@
-// function consNombre(nombre){
-//     // alert("Hola")
-//     var modelName= `modelos/${nombre}.glb`
-//     window.open("./appDiseno.html")
-//     return modelName;
-// }
-
-// module.exports =consNombre()
-// var silla  = document.getElementById("silla1")
-document.querySelectorAll(".template").forEach(element => {
-    element.addEventListener("click",()=>{
-        // module k=element.dataset.name
-        console.log("hola")
-        window.open("../appDiseno.html")
+document.querySelectorAll('.template').forEach(item => {
+    item.addEventListener('click', event => {
+    var modelPath=item.dataset.model
+    var w = window.open("./appDiseno.html");
+    w.model = modelPath;
     })
-});
-export var months = ['Jan', 'Feb', 'Mar','Apr', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+})
