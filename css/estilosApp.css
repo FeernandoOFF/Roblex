@@ -264,3 +264,11 @@ body {
     pointer-events: none;
   }
 }
+.enviar {
+  background: #4caf50;
+  border-radius: 10px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 50;
+}

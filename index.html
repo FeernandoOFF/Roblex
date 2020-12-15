@@ -7,12 +7,38 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-b{font-weight: 600;}
-a{text-decoration: none;}
+  body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+  body {font-size:16px;}
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+  b{font-weight: 600;}
+  a{text-decoration: none;}
+  .header--img{
+    width: 77%;
+    margin-top: -10vh;
+    float: right;
+    text-align: center;
+    height: 55vh;
+    background-image: url('img/img3.jpg');
+    background-size: cover;
+  }
+  .header--img h1{
+    color: rgba(44,44,44,.96);
+    margin-top: 10%;
+  }
+  @media screen and (max-width: 1000px){
+    .header--img{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+    .header--img h1 b{
+      font-size: 65px;
+
+    }
+  }
 </style>
 <body>
 
@@ -25,9 +51,9 @@ a{text-decoration: none;}
   <div class="w3-bar-block">
     <a href="#inicio" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inicio</a> 
     <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Servicio</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Muestras</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Comunidad</a> 
     <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Equipo</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> 
+    <!-- <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>  -->
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a>
   </div>
 </nav>
@@ -40,15 +66,14 @@ a{text-decoration: none;}
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- Header -->
+<div class="header--img" id="inicio">
+  <h1 class="w3-jumbo"><b>Diseño de Muebles</b></h1>
+</div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="inicio">
-    <h1 class="w3-jumbo"><b>Diseño de Muebles</b></h1>
-  </div>
-  
   <!-- Services -->
   <div class="w3-container" id="services" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Servicio.</b></h1>
@@ -60,14 +85,20 @@ a{text-decoration: none;}
     <a href="app.html" class="w3-button w3-red w3-padding-large w3-hover-black w3-margin-top">Probar Ahora</a>
   </div>
 
+
   <!-- Photo grid (modal) -->
+
+
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Muestras.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Nuestra Comunidad.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h3><b>Workshop.</b></h3>
+    <p>Nuestra comunidad es completamente lo que hace a esta empresa. <b> ¡Puedes crear lo que quieras y compartirlo con el mundo!</b>
+    </p>
   </div>
   <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="img/img1.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="img/img1.jpg" style="width:100%" onclick="onClick(this)" alt="Javer Alonso proyecto casa">
       <img src="img/img2.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
       <img src="img/img3.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
     </div>
@@ -88,8 +119,6 @@ a{text-decoration: none;}
     </div>
   </div>
 
-
-  
   <!-- Designers -->
   <div class="w3-container" id="designers" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Nuestro Equipo.</b></h1>
@@ -109,7 +138,9 @@ a{text-decoration: none;}
         <div class="w3-container">
           <h3>Mario Tejada</h3>
           <p class="w3-opacity">CEO & Fundador</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>CEO y miembro del Depto. de Informática.
+            Mi objetivo es gestionar y dirigir ROBLEX al cumplimiento de las expectativas
+            de nuestros clientes y  ofrecerles un servicio de calidad.</p>
         </div>
       </div>
     </div>
@@ -119,7 +150,8 @@ a{text-decoration: none;}
         <div class="w3-container">
           <h3>Daniela Mondragón</h3>
           <p class="w3-opacity">Diseñadora</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Encargada del departamento de diseño de la empresa. Estoy comprometida a crear y aplicar los diseños
+            en la empresa con la finalidad de brindarles una mejor experiencia.</p>
         </div>
       </div>
     </div>
@@ -144,10 +176,11 @@ a{text-decoration: none;}
         </div>
       </div>
     </div>
-    <a href="app.html" class="w3-button w3-red w3-padding-large w3-hover-black w3-margin-top w3-margin-left">Infrastructura</a>
+    <a href="redes.html" class="w3-button w3-red w3-padding-large w3-hover-black w3-margin-top w3-margin-left">Infrastructura</a>
 
-  <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
+
+    <!-- Packages / Pricing Tables -->
+  <!-- <div class="w3-container" id="packages" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
@@ -189,7 +222,7 @@ a{text-decoration: none;}
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
   
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
